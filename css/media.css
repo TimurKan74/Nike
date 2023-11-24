@@ -1,0 +1,89 @@
+@media (max-width: 992px){
+    .nav__links {
+        gap: 32px;
+    }
+}
+@media (max-width: 768px){
+    .nav__links {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: var(--color3);
+        flex-direction: column;
+        align-items: center;
+        padding: 20vh 0 0 0;
+        z-index: 0;
+        transform: translateX(100%);
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65);
+    }
+    .nav__links a {
+        color: var(--color1);
+        font-size: 16px;
+    }
+    .nav__tools {
+        gap: 20px;
+        display: flex;
+        position: fixed;
+        bottom: 10vh;
+        flex-direction: column-reverse;
+        left: 50%;
+        transform: translateX(100%);
+        width: 100%;
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65);
+    }
+    .nav__tools_active{
+        transform: translateX(-50%);
+
+    }
+    .gamburger{
+        display: block;
+        width: 40px;
+        height: 20px;
+        position: relative;
+        background: transparent;
+        border: none;
+    }
+    .gamburger span{
+        width: 40px;
+        height: 2px;
+        display: block;
+        background-color: var(--color3);
+        position: absolute;
+        left: 0;
+        border-radius: 2px;
+        transition: 0.5s;
+        transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65);
+    }
+    .gamburger span:nth-child(1){
+        top: 0;
+    }
+    .gamburger span:nth-child(2){
+        top: 9px;
+        transition: 1s;
+    }
+    .gamburger span:nth-child(3){
+        bottom: 0;
+    }
+
+    .gamburger_active span:nth-child(1){
+        top: 9px;
+        transform: rotate(45deg);
+    }
+    .gamburger_active span:nth-child(3){
+        bottom: 9px;
+        transform: rotate(-45deg);
+    }
+    .gamburger_active span:nth-child(2){
+        transform: rotate(1080deg) scale(0%);
+    }
+    .nav__links_active{
+        transform: translateX(0%);
+    }
+    .gamburger_active span{
+        background-color: var(--color1);
+    }
+}

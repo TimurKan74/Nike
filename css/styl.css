@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.theme_white {
+    --color1: #FEFFF6;
+    --color2: #313131;
+    --color3: #848D3D;
+
+    --shadowColor: rgba(132, 141, 61, 0.30);
+}
+
+nav {
+    background-color: var(--color1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 20px 0px var(--shadowColor);
+    padding: 12px 0;
+}
+
+.container {
+    max-width: 1340px;
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.nav__elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo path {
+    fill: var(--color3);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.92, -0.49, 0.7, 1.65);
+}
+.nav__logo{
+    z-index: 2;
+}
+.nav__logo_active path {
+    fill: var(--color1);
+}
+
+.nav__links {
+    gap: 60px;
+    display: flex;
+    z-index: 0;
+}
+
+.nav__links a {
+    color: var(--color2);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.nav__tools {
+    gap: 20px;
+    display: flex;
+}
+
+.nav__tools button {
+    font-size: 20px;
+    color: var(--color2);
+    border: none;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.nav__tools .button-user {
+    font-size: 40px;
+    position: relative;
+}
+
+.link-point::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: var(--color2);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.link-point {
+    position: relative;
+    transition: 0.5s;
+}
+
+.link-point:hover {
+    color: var(--color3);
+}
+
+.link-point:hover::after {
+    opacity: 100%;
+    background-color: var(--color3);
+}
+
+.nav__tools button:hover {
+    color: var(--color3);
+    cursor: pointer;
+}
+
+.button-user span {
+    color: var(--color3);
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,12px);
+    color: var(--color2);
+    opacity: 0;
+    transition: 0.5s;
+}
+.button-user:hover span{
+    color: var(--color3);
+    opacity: 100%;
+}
+.gamburger{
+    display: none;
+}
