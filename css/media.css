@@ -2,6 +2,21 @@
     .nav__links {
         gap: 32px;
     }
+    .header__elements{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .header__stat{
+        justify-content: center;
+    }
+    .header__text p {
+        max-width: 100%;
+    }
+    .header__text{
+        min-width: 100%;
+    }
 }
 @media (max-width: 768px){
     .nav__links {
@@ -85,5 +100,13 @@
     }
     .gamburger_active span{
         background-color: var(--color1);
+    }
+}
+@media (max-width: 525px){
+    h1{
+        font-size: 46px;
+    }
+    .header__stat span, .header__stat p{
+        font-size: 24px;
     }
 }
