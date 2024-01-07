@@ -15,6 +15,7 @@ h3 {
     --color2: #313131;
     --color3: #848D3D;
     --color4: #5C5C5C;
+    --color5: #E0E3CA;
 
     --shadowColor: rgba(132, 141, 61, 0.30);
 }
@@ -290,17 +291,125 @@ h1 span {
     line-height: normal;
     margin: 0;
 }
-.header__stat hr{
+
+.header__stat hr {
     width: 1px;
     height: 82px;
     background-color: var(--color3);
     border: none;
 }
+
 .header__text {
     min-width: 520px;
     max-width: 520px;
 }
+
 .header__image img {
     max-width: 572px;
     width: 100%;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.about-us__elements {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-us__img {
+    width: 520px;
+    height: 520px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--color5);
+    position: relative;
+}
+
+.about-us__img img {
+    position: absolute;
+    width: 140%;
+    top: -17%;
+    left: -20%;
+}
+
+h2 {
+    color: var(--color2);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 span {
+    color: var(--color3);
+}
+
+.about-us h2 {
+    margin: 0 0 20px 0;
+}
+
+.about-us__info p {
+    width: 580px;
+    color: var(--color4);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    margin: 0 0 44px 0;
+}
+
+.about-us__info p span,
+.about-us__item p span {
+    color: var(--color3);
+    font-weight: 700;
+}
+
+.about-us__item {
+    display: flex;
+    gap: 20px;
+}
+
+.about-us__item>span {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    background-color: var(--color5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us i {
+    font-size: 36px;
+    color: var(--color3);
+}
+
+.about-us__item h3 {
+    margin: 0 0 3px 0;
+    color: var(--color2);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+}
+
+.about-us__item p {
+    color: var(--color4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    max-width: 360px;
+}
+.img_2{
+    display: none;
+}
+section{
+    overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
 }

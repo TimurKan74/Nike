@@ -17,6 +17,23 @@
     .header__text{
         min-width: 100%;
     }
+    .about-us__elements{
+        flex-direction: column;
+    }
+    .about-us h2{
+        text-align: center;
+    }
+    .about-us__info > p{
+        text-align: center;
+    }
+    .img_1{
+        display: none;
+    }
+    .img_2{
+        display: block;
+        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
+    }
 }
 @media (max-width: 768px){
     .nav__links {
@@ -100,6 +117,22 @@
     }
     .gamburger_active span{
         background-color: var(--color1);
+    }
+    .img_2{
+        width: 80vw;
+        height: 80vw;
+    }
+    .about-us__item p{
+        width: auto;
+        max-width: 100%;
+    }
+    .about-us__item{
+        width: 80vw;
+        margin: auto auto 20px auto;
+    }
+    .about-us__info > p{
+        margin: auto auto 30px auto;
+        width: 80vw;
     }
 }
 @media (max-width: 525px){
