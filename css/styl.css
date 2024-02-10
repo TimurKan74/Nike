@@ -475,7 +475,9 @@ html {
     justify-content: center;
     align-items: center;
 }
-
+.categories-card__foto img{
+    width: 90%;
+}
 .categories-card__info {
     padding: 20px 40px;
     gap: 38px;
@@ -601,4 +603,7 @@ body::-webkit-scrollbar-thumb{
 .categories__list::-webkit-scrollbar-thumb{
     background-color: var(--color3);
     border-radius: 5px;
+}
+.categories__buttons i{
+    display: none;
 }

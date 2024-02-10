@@ -134,6 +134,23 @@
         margin: auto auto 30px auto;
         width: 80vw;
     }
+    .categories__buttons i{
+        display: block;
+    }
+    .categories__buttons span{
+        display: none;
+    }
+    .categories__buttons button{
+        padding: 10px;
+        min-width: 50px;
+    }
+    .categories__list{
+        width: 100vw;
+        transform: translateX(-20px);
+    }
+    .categories-card__info{
+        padding: 10px 10px;
+    }
 }
 @media (max-width: 525px){
     h1{
